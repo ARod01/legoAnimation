@@ -1,0 +1,36 @@
+.heroes__contain
+    width: 95%
+    height 80%
+    background-color yellow-lego
+    border-top-right-radius: 30px
+    display: grid
+    grid-template-columns: repeat(3, minmax(150px,300px))
+    justify-items: center
+    align-items: flex-end
+    animation: 2.2s heroes .5s ease-in-out
+    &-item
+        height: 50%
+        width 75%
+        background-color blue-lego
+        border-top-left-radius: 20px
+        border-top-right-radius: 20px
+        display: flex
+        justify-content: center
+        align-items: flex-start
+        img
+            margin-top: -60px
+            width: 120px
+            height: 120px
+
+            transform: translateY(0px) scale(1)
+            animation: transform .6s ease-in-out
+        img:hover
+            transform: translateY(-30px) scale(1.4)
+            animation: transform .4s ease-in-out
+            cursor pointer
+    &-item:nth-child(1)
+        grid-column: 1 / 2
+    &-item:nth-child(2)
+        grid-column: 2 / 3
+    &-item:nth-child(3)
+        grid-column: 3 / 4
